@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Travel Recomendation Web App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="site-name">
+            TravelBloom
+        </div>
+
+        <div class="topdiv">
+            <a href="index.html" class="topmenu">Home</a>
+            <a href="./about-us.html" class="topmenu">About Us</a>
+            <a href="#contact-us" class="topmenu">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Contact Us -->
+    <section id="contact-us" class="contact-section">
+        <h1>CONTACT US</h1>
+        <div class="contact-container">
+
+            <form class="contact-form">
+                <p id="contact-us-text">We’d love to hear from you! Please fill out the form below.</p>
+                <fieldset>
+                    <input type="text" id="name" name="name" required placeholder="Name">
+                    <input type="email" id="email" name="email" required placeholder="Email">
+                    <textarea id="message" name="message" rows="6" required placeholder="Leave us a message."></textarea>
+
+                    <button id="submit" type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="./travel_recomendations.js"></script>
+</body>
