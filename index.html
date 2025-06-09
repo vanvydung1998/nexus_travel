@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normad Nexus</title>
+    <link rel="stylesheet" href="styles.css"/>	
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!-- Navigation bar -->
+    <nav>
+        <div class="company-name">
+            Normad Nexus
+        </div>
+
+        <div class="topdiv">
+            <a href="#home-page" class="navigbar">Home</a>
+            <a href="about-us.html" class="navigbar">About Us</a>
+            <a href="contact-us.html" class="navigbar">Contact Us</a>
+        </div>
+
+        <div class="searchWrapper">
+            <div>
+                <form
+                    id="searchForm"
+                    onsubmit="event.preventDefault(); searchData();"
+                >
+                    <div class=inputWrapper>
+                        <input
+                            id="search-input"
+                            type="text"
+                            placeholder="Search destinations..." 
+                        />
+         
+                        <img src="https://cdn-icons-png.flaticon.com/512/149/149852.png"  alt="Search"> 
+  
+                    </div> 
+                    <button type="button" id="search-btn">Search</button>
+                    <button type="button" id="clear-btn">Clear</button>
+                </form>
+            </div>
+        <div>
+    </nav>
+    
+    <!-- Social links -->
+    <div>
+        <p>
+        <img src="./images/social.png" class="social-links" alt="Social Links">  
+    </div>
+    
+    <section class="home-section">
+        <div class="home-content"> 
+            <h1>Find Your Paradise</h1>
+            <p id="home-text">
+                Uncover awe-inspiring destinations, vibrant communities, and experiences 
+                that leave a lasting impression. Whether you chase adventure or unwind 
+                in bliss, your perfect trip starts today.    
+            </p>
+            <button id="book-now">Book Now</button>
+        </div>
+        <div id="result""></div>      
+    </section>
+
+</div>
+<script src="travel_recommendations.js"></script> 
+</body>
